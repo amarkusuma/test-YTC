@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Simple CRUD by TUTORIALWEB.NET</title>
+	<title>Presensiku</title>
 </head>
 <body>
-	<h2>Simple CRUD</h2>
+	<h2>Presensiku</h2>
 	
 	<p><a href="presensi.php">Presensi</a> // <a href="verifikasi.php">Verifikasi</a></p>
 	
