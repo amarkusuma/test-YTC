@@ -12,10 +12,10 @@
 	
 	<table cellpadding="5" cellspacing="0" border="1">
 		<tr bgcolor="#CCCCCC">
+			<th>No</th>
 			<th>NIK</th>
-			<th>Jam Masuk</th>
+            <th>Jam Masuk</th>
             <th>Jam Keluar</th>
-            <th>Tanggal</th>
 		</tr>
 		
         <?php
@@ -26,10 +26,10 @@
         
         $nik = $_SESSION['nik'];
 
-		$result = mysqli_query($conn, "SELECT * FROM presensi ORDER BY id desc limit 30 ");
+		$result = mysqli_query($conn, "SELECT * FROM presensi WHERE user_id=$nik ORDER BY id desc limit 30 ");
     
 	    $presensi = mysqli_fetch_array($result);
-        
+       
 		if(empty($nik)){
 			
 			echo '<tr><td colspan="6">Verifikasi Dulu!</td></tr>';
